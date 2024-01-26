@@ -342,6 +342,7 @@ mod tests {
     use super::{channel, Callback, Receiver};
 
     #[derive(Debug)]
+    #[allow(dead_code)]
     struct Custom(i32);
 
     impl<T, U> Future for Receiver<T, U> {
